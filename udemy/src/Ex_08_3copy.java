@@ -1,4 +1,3 @@
-package work ;
 class Ex1_08_3copy {
 	public static void main (String[] args) {
 		

@@ -1,6 +1,6 @@
-package work;
 
-public class ProgateFile {
+
+public class test {
 
 	public static void main (String[] args) {
 		System.out.println("Progate の実機練習");

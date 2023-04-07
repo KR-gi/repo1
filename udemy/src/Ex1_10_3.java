@@ -13,7 +13,7 @@
 90 91 92 93 94 95 96 97 98 99
 
 ----------------------------------------------------*/
-package work ;
+
 class Ex1_10_3 {
 	public static void main (String[] args) {
 		
