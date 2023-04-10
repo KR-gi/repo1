@@ -7,23 +7,59 @@ public class cakesum {
         int productSum = 0; //商品の合計
         double totalAmount = 0;//合計金額
         
+        int    checkCakeCount  = 0    ;
+ 
+        for (int i = 0 ; i < args.length ; i += 2) {
+            
+          
+      
+            
+            switch (args[i]) {
+            case "ショートケーキ" :
+                i++;                
+                productSum += productSum + (Integer.parseInt(args[i]) * 320);
+                
+                break;
+                
+            case "モンブラン" :
+                i++;
+                productSum += productSum + (Integer.parseInt(args[i]) * 350);
+                
+                break;
+                
+            case "チョコレートケーキ" :
+                i++;
+                productSum += productSum + (Integer.parseInt(args[i]) * 370);
+                
+                break;
+                
+            case "いちごのタルト" :
+                i++;
+                productSum += productSum + (Integer.parseInt(args[i]) * 400);
+                break;
+                
+            case "チーズケーキ" :
+                i++;
+                productSum += productSum + (Integer.parseInt(args[i]) * 300);
+                
+                break;
+        }
+        }      
         
-        
-        
-        
-        if (productSum >= 1000) {
+        if (productSum > 1000) {
             double discountAmount = productSum*0.2;//割引額
             totalAmount = (productSum - discountAmount)*1.08;//合計金額
           
-            System.out.println(totalAmount+ "円になります。");
+            System.out.println((int)totalAmount+ "円になります。");
           
         }else {
             totalAmount = productSum *1.08;
-            System.out.println(totalAmount+ "円になります。");
+            System.out.println("合計金額は" +(int)totalAmount+ "円になります。");
         }
         //name1.equals(name2)
     }
 }
+
 
 //商品は以下の5種類とす
 //- ショートケーキ ：320円
