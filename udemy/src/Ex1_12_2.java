@@ -21,16 +21,20 @@ class Ex1_12_2 {
 		int calcNumber    = receiveNumber ;              //表示する数（初期値：コマンドライン引数で受け取った値）
 		
 		
-			if (receiveNumber >= 1) {
-				
+			if (receiveNumber < 0  ||  receiveNumber == 0 || receiveNumber == 1 ) {
+			  
+			    System.out.println("適切な値を入力してください」");
+			
+			} else {
+			        
 				while( calcNumber < 100 ){
 					
 				System.out.println("calcNumber：" + calcNumber);
 				
 				calcNumber *= receiveNumber ;
 		
-			} else {
-				System.out.println("適切な値を入力してください」");
+			
+				
 			}
 			
 		}
