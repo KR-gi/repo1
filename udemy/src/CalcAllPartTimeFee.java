@@ -2,8 +2,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.math.BigDecimal;
-import java.sql.Date;
 import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +20,7 @@ class CalcAllPartTimeFee {
 		List<String> workingResults = new ArrayList<String>();   //勤務実績リスト
 		
 		try {
-			File file = new File("C:\\WorkSpace\\WorkingResult.csv");       //「C:\WorkSpace」直下に「WorkingResult.csv」を格納
+			File file = new File("C:\\Users\\MIK02\\Documents\\git\\repo1\\udemy\\src\\WorkingResult.csv");       //「C:\WorkSpace」直下に「WorkingResult.csv」を格納
 			BufferedReader br = new BufferedReader(new FileReader(file));
 
 			//「WorkingResult.csv」から1行ずつ読み込み、勤務実績リストを作成
