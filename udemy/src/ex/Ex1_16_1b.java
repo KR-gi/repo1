@@ -1,3 +1,4 @@
+package ex;
 public class Ex1_16_1b {
 	
 	public int calcTaxPrice( int price ){        //アンダーバーを適切な内容に書き換えてください

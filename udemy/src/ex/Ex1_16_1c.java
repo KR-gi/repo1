@@ -1,3 +1,4 @@
+package ex;
 public class Ex1_16_1c {
 	
 	public int discount( int price ){

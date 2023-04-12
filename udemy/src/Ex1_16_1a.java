@@ -1,3 +1,6 @@
+import ex.Ex1_16_1b;
+import ex.Ex1_16_1c;
+
 public class Ex1_16_1a {
 	public static void main (String[] args) {
 		
