@@ -47,6 +47,7 @@ public class EX1_3_2 {
             
 
             monthlySalay += calcPartTimeFeeByTheDay( forSplitRecode[1] , forSplitRecode[2] ) ;
+            //monthlySalay += CalcAllPartTimeFee.calcPartTimeFeeByTheDay( forSplitRecode[1] , forSplitRecode[2] ) ;
         }
         
         System.out.println("今月の給与は、" + monthlySalay + "円です。");
@@ -89,7 +90,7 @@ public class EX1_3_2 {
              
              actualTime = (int)( (workingTime - EIGHT_TIME_WORKING_HOURS_OVER) / ONE_MIN_BY_MILLI_SEC);
              //6時間以上8時間未満                                         
-            }else if (workingTime > WORK_TIME_TYPE2_START && workingTime >= WORK_TIME_TYPE2_END) {    
+            }else if (workingTime > WORK_TIME_TYPE2_START && workingTime <= WORK_TIME_TYPE2_END) {    
             
                 actualTime = (int)((workingTime - EIGHT_TIME_WORKING_HOURS_UNDER) / ONE_MIN_BY_MILLI_SEC);
              
