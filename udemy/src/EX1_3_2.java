@@ -104,16 +104,12 @@ public class EX1_3_2 {
             
                 salay = (MINUTES_WAGE * ACTUAL_WORK_TIME_OVERTIME_OCCUR_MIN) 
                     + (int)(MINUTES_WAGE * OVER_TIME_WORK_FARE_LATE * (actualTime - ACTUAL_WORK_TIME_OVERTIME_OCCUR_MIN));
-                
-                
-
+  
             }else{
 
                 salay = MINUTES_WAGE * actualTime;
                 
             }
-            
-            
             
             return salay ;
        
