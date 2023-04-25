@@ -1,5 +1,5 @@
 -- 算術演算子
-use 
+
 # +,-,*,%
 
 select 1+1;
@@ -28,7 +28,7 @@ select 10%3; -- 1
 select age % 12 from users;
 
 -- CONCAT(文字の連結) ||
-select  concat(department ,": ", name )as "部署：名前" from employees;
+select  concat(department ,":", name )as "部署：名前" from employees;
 select  concat( name,"(",age,")") as "名前(年齢)" from users; 
 
 
@@ -38,5 +38,5 @@ select now(); -- 現在時刻
 select now( ),3+2,name,age from users;  
 
 select curdate(); -- 日付のみ
-select  date_format(now(),"%Y/%m/%d %h"); -- %Y 年,%m 月,%d 日
+select  date_format(now(),"%Y%m%d%h"); -- %Y 年,%m 月,%d 日
  

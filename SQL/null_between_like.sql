@@ -1,3 +1,4 @@
+
 select DATABASE();
 describe customers;
 

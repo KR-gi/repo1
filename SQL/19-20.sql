@@ -14,7 +14,7 @@ SELECT name,CHAR_LENGTH (name) FROM users;
 
 SELECT LTRIM ("  ABC  ");
 SELECT RTRIM ("  ABC  ");
-SELECT TRIM ("  ABC  ") ; -- エラーとなった
+SELECT TRIM("  ABC  ") ; 
 
 SELECT * FROM employees WHERE CHAR_LENGTH (name) <> CHAR_LENGTH (TRIM(name));
 

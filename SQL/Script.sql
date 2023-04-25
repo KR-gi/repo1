@@ -1,18 +1,26 @@
-SHOW DATABASES;
+select database();
 
-CREATE DATABASE by_db;
+# テーブル作成
+create table people (
+	id int primary key,
+	name varchar(50),
+	birth_day date default "1990-01-01"
+);
 
-SHOW DATABASES;/*DB 一覧を表示します*/
+#INSERT 1
+insert into people values(1,"Taro", "2001-01-01");
 
-#DBの削除
-DROP DATABASE by_db;
+#SELECT
+select*from people ;
 
-# performance_schema を利用
-USE performance_schema;
+# INSERT カラム指定 ※ 誕生日は default が入る
+insert into people (id,name) VALUES(2,"Jiro");
 
-# 利用中の DB の表示
-SELECT DATABASE();
+#シングルクォート
+insert into people (id,name) values (3,'Sabro');
 
-CREATE DATABASE my_db;
+insert into people values (4,'John''s son', '2021-01-01');
 
-USE  my_db;
+insert into people values (5,'John"s son', '2021-01-01');
+# "の中に"
+insert into people values (6,"John""s son", '2021-01-01');
