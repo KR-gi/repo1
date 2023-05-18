@@ -5,8 +5,18 @@
 <title th:text="${title}">Insert title here</title>
 </head>
 <body>
-<h1 th:text = "${title}">title</h1>
-<p th:text = "${name}">name</p>
-<p th:text = "${email}">email</p>
+<h1 th:text="${title}">title</h1>
+<table>
+	<tr>
+		<th>id</th><th>age</th><th>satisfaction</th><th>comment</th><th>datetime</th>
+	</tr>
+	<tr th:each="survey : ${surveyList}">
+		<td th:text="${survey.id}">1</td>
+		<td th:text="${survey.age}">age</td>
+		<td th:text="${survey.satisfaction}">satisfaction</td>
+		<td th:text="${survey.comment}">comment</td>
+		<td th:text="${survey.created}">created</td>
+	</tr>
+</table>
 </body>
 </html>
