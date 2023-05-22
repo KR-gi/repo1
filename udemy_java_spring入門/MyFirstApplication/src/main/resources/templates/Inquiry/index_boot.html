@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.111.3">
-    <title>Starter Template · Bootstrap v5.3</title>
+    <title th:text="${title}">Starter Template · Bootstrap v5.3</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/starter-template/">
 
@@ -254,6 +254,28 @@
         </ul>
       </div>
     </div>
+    
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">name</th>
+      <th scope="col">email</th>
+      <th scope="col">contents</th>
+      <th scope="col">datetime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="inquiry : ${inquiryList}">
+      <th scope="row" th:text="${inquiry.id}">1</th>
+      <td th:text="${inquiry.name}"></td>
+	  <td th:text="${inquiry.email}"></td>
+   		<td th:text="${inquiry.contents}"></td>
+		<td th:text="${inquiry.created}"></td>
+    </tr>
+   </tbody>
+</table>
+   
   </main>
   <footer class="pt-5 my-5 text-body-secondary border-top">
     Created by the Bootstrap team &middot; &copy; 2023
