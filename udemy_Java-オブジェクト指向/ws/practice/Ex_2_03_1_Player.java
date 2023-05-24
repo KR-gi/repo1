@@ -1,14 +1,13 @@
 
-public class Ex_2_01_1_Player {
-
+public class Ex_2_03_1_Player {
     final String Hand_G= "グー";
     final String Hand_C = "チョキ";
     final String Hand_P = "パー";
     
-    String name ;
-    String handStatus;
+    private String name ;
+    private String handStatus;
     
-    Ex_2_01_1_Player(String nm){
+    Ex_2_03_1_Player(String nm){
         this.name = nm;
     }
     
@@ -30,4 +29,13 @@ public class Ex_2_01_1_Player {
             
         }
     }
+    //name の getter
+    public String getName() {
+        return this.name;
+    }
+    // handStatus の getter
+    public String getHandStatus() {
+        return this.handStatus;
+    }
+
 }

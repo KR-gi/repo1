@@ -1,6 +1,5 @@
 
-public class Ex_2_01_1_Player {
-
+public class Ex_2_02_2_Player {
     final String Hand_G= "グー";
     final String Hand_C = "チョキ";
     final String Hand_P = "パー";
@@ -8,7 +7,7 @@ public class Ex_2_01_1_Player {
     String name ;
     String handStatus;
     
-    Ex_2_01_1_Player(String nm){
+    Ex_2_02_2_Player(String nm){
         this.name = nm;
     }
     
@@ -30,4 +29,5 @@ public class Ex_2_01_1_Player {
             
         }
     }
+
 }
