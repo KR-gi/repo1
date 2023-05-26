@@ -1,6 +1,4 @@
-
-
-public class Sample2_05_2_Car {
+public class Sample2_07_1_Truck extends Sample2_07_1_AbstractTruck {
 	
 	//---フィールド------------------------------------------------------
 	protected String color ;  //塗装色
@@ -8,14 +6,15 @@ public class Sample2_05_2_Car {
 	
 	//---コンストラクタ--------------------------------------------------
 	
-	//コンストラクタ①（引数なし）
-	public Sample2_05_2_Car(){
+	//コンストラクタ（引数なし）
+	public Sample2_07_1_Truck(){
 		this.color = "未登録" ;  //塗装色
 		this.speed = 0        ;  //現在の速度
 	}
 	
 	//---メソッド------------------------------------------------
 	
+	//★抽象メソッドの実装
 	//paintメソッド（色を塗る）※セットできる塗装色は「WHITE」「BLACK」「RED」
 	public void paint( String cl ){
 		if( cl.equals( "WHITE" ) || cl.equals( "BLACK" )|| cl.equals( "RED" ) ){
@@ -23,6 +22,7 @@ public class Sample2_05_2_Car {
 		}
 	}
 	
+	//★抽象メソッドの実装
 	//acceleratorメソッド（現在の速度を1km/h上げる）※180km/h以上にはならないよう制御
 	public void accelerator(){
 		if( this.speed < 180 ){
@@ -30,6 +30,7 @@ public class Sample2_05_2_Car {
 		}
 	}
 	
+	//★抽象メソッドの実装
 	//brakeメソッド（現在の速度を1km/h下げる）※0km/h以下にはならないよう制御
 	public void brake(){
 		if( this.speed > 0 ){

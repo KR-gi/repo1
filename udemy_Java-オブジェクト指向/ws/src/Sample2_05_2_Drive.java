@@ -1,5 +1,3 @@
-import sample.Sample2_05_2_Car ;
-
 class Sample2_05_2_Drive {
 	public static void main (String[] args) {
 		
