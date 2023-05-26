@@ -13,7 +13,7 @@ class BattleWild {
 	public void mainBattle () {
 
 		//バトル相手をインスタンス化
-		Fushigiyade enemy = new Fushigiyade("やせい","フシギヤデ",20);
+	    Fushigiyada1 enemy = new Fushigiyada1("やせい","フシギヤデ",20);
 		prinTextAsGame("あっ！ やせいの " + enemy.getCharacter() + " が とびだしてきた！");
 		//何か入力されるまで待機
 		System.out.println("▼");
@@ -21,7 +21,7 @@ class BattleWild {
 
 		//自分のモンスターをインスタンス化
 		System.out.println("");
-		Hitokake myMonster = new Hitokake("ぼく","カケ郎",21);
+		Hitokage1 myMonster = new Hitokage1("ぼく","カケ郎",21);
 		prinTextAsGame("ゆけ！ " + myMonster.getName() + "！");
 		//何か入力されるまで待機
 		System.out.println("▼");

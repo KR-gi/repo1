@@ -17,7 +17,11 @@ public class Hitokage1 extends Monster03 {
     
     public void levelUp (int up) {
         setLv(getLv() + 1 * up);
-        setHpMax
+        setHpMax(getHpMax() + 29 * up);
+        setAtk (getAtk() + 8 * up);
+        setDef( getDef() + 5 * up);
+        setSpd(getSpd() + 9 *up);
+        setHp(getHpMax());
     }
 
 }

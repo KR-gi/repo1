@@ -81,6 +81,14 @@ public class Monster03 {
         return status;
     }
     
+    int useWaza() {
+        BigDecimal bdAtk = new BigDecimal(atk);
+        BigDecimal bdDmrt = new BigDecimal(wazaDmgRate);
+        int dmg = (bdAtk.multiply(bdDmrt)).intValue();
+        
+        return dmg;
+    }
+    
     public int damaged(int orgDm) {
         BigDecimal bdOrgDm = new BigDecimal(orgDm);
         BigDecimal bdDmCr120 = new BigDecimal(DMG_CORRECTION_120);
